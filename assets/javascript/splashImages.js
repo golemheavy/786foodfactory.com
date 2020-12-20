@@ -1,6 +1,5 @@
 		
 		var bgImages = [
-			"background2-reduced.JPEG",
 			"background3-reduced.JPEG",
 			"background4-reduced.JPEG",
 			"background5-reduced.JPEG"
@@ -14,9 +13,7 @@
 		var elem = document.getElementsByClassName("bigbackimg2");
 		
 		
-		if (elem.length === 1) {
 			elem[0].style.backgroundPositionX = "center";
-			//elem[0].style.backgroundPositionY = "center";
 			elem[0].style.backgroundSize = "cover";
     		elem[0].style.backgroundRepeat = "no-repeat";
 			
@@ -24,10 +21,6 @@
 			elem[0].style.backgroundOrigin = "initial";
 			elem[0].style.backgroundClip = "initial";
 			elem[0].style.backgroundColor = "currentColor";
-		}
-		else {
-			elem[0].style.background = "currentColor url(./assets/images/background/background2-reduced.JPEG) no-repeat center/cover fixed";
-		}
 		
 		function changeToMobileImg(x) {
 			let bodyElem = document.getElementsByTagName("body")[0];
